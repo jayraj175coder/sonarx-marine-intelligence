@@ -1,0 +1,14 @@
+# Exclude TypeScript from GitHub language statistics so Jupyter Notebook can become the repo's top language
+# Mark TypeScript source as "vendored" (ignored by linguist)
+# Also ensure notebooks are explicitly recognized as Jupyter Notebook (usually automatic)
+
+# Ignore common TS files and directories
+*.ts linguist-vendored
+*.tsx linguist-vendored
+src/** linguist-vendored
+lib/** linguist-vendored
+dist/** linguist-vendored
+build/** linguist-vendored
+
+# Keep notebooks counted as Jupyter Notebook
+*.ipynb linguist-language=Jupyter Notebook
