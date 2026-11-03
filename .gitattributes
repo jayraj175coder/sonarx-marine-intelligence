@@ -10,5 +10,8 @@ lib/** linguist-vendored
 dist/** linguist-vendored
 build/** linguist-vendored
 
+# Exclude standalone Python files from language statistics so notebooks can be the primary displayed language
+*.py linguist-vendored
+
 # Keep notebooks counted as Jupyter Notebook
-*.ipynb linguist-language=Jupyter Notebook
+"*.ipynb" "linguist-language=Jupyter Notebook"
